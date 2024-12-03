@@ -13,7 +13,7 @@ function AdminProductList() {
       fetchProducts();
     } else {
       console.error('Token non trovato. Effettua il login come admin.');
-      // Potresti voler reindirizzare l'utente alla pagina di login qui
+      
     }
   }, [token]);
 

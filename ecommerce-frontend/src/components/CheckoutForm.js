@@ -18,11 +18,11 @@ function CheckoutForm({ cartItems, setCartItems }) {
     console.log("Prodotti nel carrello:", cartItems);
 
     const orderData = {
-      name, // Nome cliente
-      email, // Email cliente
-      address, // Indirizzo di spedizione
+      name, 
+      email, 
+      address, 
       vatNumber: vatNumber || null, // Partita IVA (opzionale)
-      paymentMethod, // Metodo di pagamento
+      paymentMethod, 
       products: cartItems.map((item) => ({
         productId: item._id,
         quantity: item.quantity,

@@ -33,7 +33,6 @@ exports.createOrder = async (req, res) => {
     const savedOrder = await newOrder.save();
 
     // Invia un'email di conferma al cliente
-    // Configura il trasportatore SMTP
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {

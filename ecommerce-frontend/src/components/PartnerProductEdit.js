@@ -33,7 +33,6 @@ function PartnerProductEdit() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Crea un FormData per inviare i dati e il file
       const formData = new FormData();
       formData.append('name', name);
       formData.append('description', description);

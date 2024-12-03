@@ -18,19 +18,22 @@
 .footer-section {
   flex: 1 1 200px;
   margin: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .footer-section h3 {
   border-bottom: 2px solid #555;
   margin-bottom: 15px;
-  font-size: 1.2em; /* Riduci la dimensione del titolo */
+  font-size: 1.2em; 
 }
 
 .footer-section p,
 .footer-section ul {
   margin: 0;
   padding: 0;
-  font-size: 0.9em; /* Riduci la dimensione del testo */
+  font-size: 0.9em; 
+  
 }
 
 .footer-section ul {
@@ -59,7 +62,7 @@
 
 .social-icons a {
   color: #bbb;
-  font-size: 2em; /* Riduci la dimensione delle icone */
+  font-size: 2em; 
   transition: color 0.3s ease;
 }
 
@@ -72,7 +75,7 @@
   padding: 10px;
   border-top: 1px solid #555;
   margin-top: 0px;
-  font-size: 0.6em; /* Riduci ulteriormente la dimensione del testo */
+  font-size: 0.6em; 
 }
 
 /* Responsività */
@@ -85,5 +88,6 @@
   .footer-section {
     margin: 10px 0;
     text-align: center;
+    
   }
 }

@@ -8,13 +8,11 @@ const userSchema = new mongoose.Schema({
     type: String, 
     required: true, 
     unique: true,
-    match: [/\S+@\S+\.\S+/, 'Formato email non valido'] // Validazione del formato email
+    match: [/\S+@\S+\.\S+/, 'Formato email non valido'] 
   },
   password: { type: String, required: true },
   role: { type: String, enum: ['admin', 'partner'], required: true },
   createdAt: { type: Date, default: Date.now },
-  // Rimuovi i campi specifici del partner se presenti
-  // businessName, contactEmail, contactPhone, address
 });
 
 module.exports = mongoose.model('User', userSchema);

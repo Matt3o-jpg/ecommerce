@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { registerPartner } from '../services/apiServices';
 
 function PartnerRegister({ setIsAuthenticated, setIsPartner }) {
-  // Stati per i campi del modulo
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [businessName, setBusinessName] = useState('');
@@ -17,7 +16,7 @@ function PartnerRegister({ setIsAuthenticated, setIsPartner }) {
     postalCode: '',
     country: '',
   });
-  const [errorMessage, setErrorMessage] = useState(''); // Stato per gli errori
+  const [errorMessage, setErrorMessage] = useState(''); 
   const navigate = useNavigate();
 
   // Gestore per i cambiamenti nei campi dell'indirizzo
@@ -33,7 +32,7 @@ function PartnerRegister({ setIsAuthenticated, setIsPartner }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Costruisci l'oggetto dei dati del partner
+     
       const partnerData = {
         username,
         password,
@@ -47,7 +46,7 @@ function PartnerRegister({ setIsAuthenticated, setIsPartner }) {
       const res = await registerPartner(partnerData);
       
       // Salva il token nel localStorage
-      localStorage.setItem('token', res.token); // Corretto da res.data.token a res.token
+      localStorage.setItem('token', res.token); 
       
       // Aggiorna lo stato di autenticazione
       setIsAuthenticated(true);

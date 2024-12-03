@@ -82,7 +82,7 @@ function PartnerProductList() {
         <table className="table table-striped">
           <thead>
             <tr>
-              <th>Immagine</th> {/* Aggiunto per visualizzare l'immagine */}
+              <th>Immagine</th> 
               <th>Nome</th>
               <th>Prezzo</th>
               <th>Categoria</th>
@@ -123,7 +123,7 @@ function PartnerProductList() {
         </table>
       )}
 
-      {/* Modale di conferma eliminazione */}
+      {/* Modulo di conferma eliminazione */}
       <Modal show={showDeleteModal} onHide={handleCancelDelete}>
         <Modal.Header closeButton>
           <Modal.Title>Conferma Eliminazione</Modal.Title>

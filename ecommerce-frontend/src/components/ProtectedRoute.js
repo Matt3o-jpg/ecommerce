@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 const ProtectedRoute = ({ isAuthenticated, roleRequired, userRole, children }) => {
   if (!isAuthenticated) {
     // Se l'utente non è autenticato, reindirizza alla pagina di login
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/partner/login" replace />;
   }
 
   if (roleRequired && userRole !== roleRequired) {
